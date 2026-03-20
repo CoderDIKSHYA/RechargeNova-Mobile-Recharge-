@@ -146,16 +146,6 @@ Each service has its own isolated database:
 ✔ Only **Operator ↔ Plan** uses JPA relationship  
 ❌ All others use **ID-based references only**
 
-```
-
-User ──< Recharge
-Recharge ──> Operator
-Recharge ──> Plan
-Recharge ──> Transaction
-User ──< Transaction
-User ──< Notification
-
-```
 
 ---
 
@@ -226,8 +216,8 @@ PENDING
 
 ## 📁 Project Structure
 
-```
 
+```
 recharge-backend/
 ├── eureka-server/
 ├── api-gateway/
@@ -237,7 +227,6 @@ recharge-backend/
 ├── recharge-service/
 ├── payment-service/
 └── notification-service/
-
 ```
 
 Each service structure:
