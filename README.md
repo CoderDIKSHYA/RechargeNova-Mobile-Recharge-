@@ -20,30 +20,7 @@ Here is your **properly formatted GitHub README (clean, professional, copy-paste
 
 ## 🏗️ Architecture
 
-```
-Client (Postman / Frontend)
-        │
-        ▼
-┌─────────────────────────────┐
-│       API Gateway           │
-│   JWT Filter · Routing      │
-└─────────────┬───────────────┘
-              │
-              ▼
-┌─────────────────────────────┐
-│       Eureka Server         │
-│    Service Registry         │
-└─────────────┬───────────────┘
-              │
-   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-   ▼          ▼          ▼          ▼          ▼
 
- User      Operator    Recharge    Payment    Notification
- :8081      :8082       :8083       :8084       :8085
-
-  │           │           │           │           │
-user_db   operator_db recharge_db payment_db notification_db
-```
 ---
 
 ## 🧩 Microservices Breakdown
