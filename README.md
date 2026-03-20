@@ -35,12 +35,11 @@ Client (Postman / Frontend)
 │    Service Registry         │
 └─────────────┬───────────────┘
               │
-   ┌──────────┼──────────┬──────────┬──────────┬──────────┐
-   │          │          │          │          │
+   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
    ▼          ▼          ▼          ▼          ▼
 
- User       Operator    Recharge    Payment    Notification
- :8081       :8082       :8083       :8084       :8085
+ User      Operator    Recharge    Payment    Notification
+ :8081      :8082       :8083       :8084       :8085
 
   │           │           │           │           │
 user_db   operator_db recharge_db payment_db notification_db
